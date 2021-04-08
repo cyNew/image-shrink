@@ -1,0 +1,41 @@
+{
+  "name": "image-shrink",
+  "productName": "ImageShrink",
+  "version": "1.0.0",
+  "description": "App to optimize images",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "dev": "nodemon --watch ./src --exec electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "Chengyu Zhang",
+    "email": "302974766@qq.com"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "dependencies": {
+    "electron-log": "^4.3.3",
+    "electron-squirrel-startup": "^1.0.0",
+    "imagemin": "^7.0.1",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "slash": "^3.0.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
+    "electron": "12.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
